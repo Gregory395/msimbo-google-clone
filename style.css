@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+:root {
+    box-sizing: border-box;
+
+    /** Colors */
+    /** Please see coolors.com for more reference **/
+    --base-background-color: hsl(0, 0%, 100%);
+    --card-color: hsl(210, 29%, 97%);
+    --primary-color: hsl(137, 56%, 41%);
+    --link-color: hsl(212, 82%, 47%);
+    --text-color: hsl(213, 6%, 30%);
+    --sec-text-color: hsl(212, 9%, 38%);
+    --base-border-color: #EBEDEF;
+
+    /** Typography */
+    --base-font: system-ui, Montserrat, sans-serif;
+    --base-weight: 300;
+
+    /** Layouts  */
+    --base-component-width: 270px;
+
+    /** Glam & Pops **/
+    --base-border-radius: 5px;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: var(--base-font);
+    font-weight: var(--base-weight);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#container {
+    width: 550px;
+    margin: 65px auto;
+    text-align: center;
+}
+
+#container > h2 {
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: var(--base-font);
+    font-weight: 400;
+}
+
+#login-form {
+    background-color: var(--card-color);
+    padding: 15px;
+    width: var(--base-component-width);
+    margin: 0 auto;
+    border-radius: var(--base-border-radius);
+    border: 1px solid var(--base-border-color);
+
+    font-family: var(--base-font);
+    font-size: 0.75em;
+    font-weight: 200;
+
+}
+
+#login-form input {
+    width: 95%;
+    padding: 7px;
+    border-radius: var(--base-border-radius);
+    border: 1px solid var(--base-border-color);
+}
+
+#login-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--base-background-color);
+    width: 100%;
+}
+
+#login-form > div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+#login-form div:nth-child(2) p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec-cta {
+    border: 2px solid var(--base-border-color);
+    padding: 13px;
+    width: 250px;
+    margin: 30px auto;
+    font-size: 0.75em;
+    border-radius: var(--base-border-radius);
+}
+
+#footer {
+    font-size: 0.65em;
+    display: flex;
+    justify-content: space-evenly;
+    width: 270px;
+    margin: 70px auto;
+}
+
+#footer a:last-child {
+    color: var(--sec-text-color);
+}
+
+#sec-cta a:hover,
+#footer a:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+}

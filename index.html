@@ -5,57 +5,48 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GoogleDuckDuckGo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GoogleDuckGo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<style>
-    p {
-        color: darkgray;
-    }
-    h1 {
-        font-size: 1.75rem;
-        color: darkgrey;
-    }
-    /**
-    @TODO: Refactor this section to properly style the "Search button" and "contact" button
-         without conflicting with the style of the main `input` box
-         1. *Secure Search* should be a button similar to Google's
-         2. *Contact Us* should be a link
-     */
-    input {
-        display: block;
-        width: 550px;
-        height: 35px;
-        border-radius: 4px;
-    }
 
-    #nav p {
-        /*font-size: 1.1rem;*/
-        /*background-color: red;*/
-        display: inline;
-    }
+<div id="container">
+    <h2>Sign in to GitHub</h2>
 
-</style>
-<!-- Header -->
-<div id="nav">
-    <!-- block level -->
-    <!-- inline level -->
-    <p><a href="#">About</a></p>
-    <p><a href="">Store</a></p>
-    <p><a href="">User</a></p>
-</div>
+    <div id="login-form">
 
-<!-- main section -->
-<div id="main-cta">
-    <h1>GoogleDuckGo</h1>
-    <input type="text" name="search" id="search" placeholder="Search the web without being tracked">
-        <input type="submit" value="Secure Search">
-</div>
+        <div>
+            <label for="username">
+                <p>Username or email address
 
-<!-- footer -->
-<div id="footer">
-    <input type="submit" value="Contact Us">
+                </p>
+                <input type="text" id="username">
+            </label>
+        </div>
+
+        <div>
+            <label for="password">
+                <p>Password
+                    <span><a href="#">Forgot password?</a></span>
+                </p>
+                <input type="password" id="password">
+            </label>
+        </div>
+
+        <input type="submit" value="Sign in">
+    </div>
+
+    <div id="sec-cta">
+        <p>New to GitHub? <a href="#">Create an account</a></p>
+    </div>
+
+    <div id="footer">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Security</a>
+        <a href="#">Contact GitHub</a>
+    </div>
+
 </div>
 
 </body>
